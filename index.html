@@ -51,11 +51,17 @@
     background-color: #1F2937;
     display: flex;
     height: 20vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .section1 * {
     display: flex;
     list-style: none;
+}
+
+#signup1 {
+    background-color: #3B82F6;
 }
 
 .leftCont1 {
@@ -67,8 +73,7 @@
     padding-left: 25vw;
     justify-content: middle;
     flex-direction: column;
-    padding-top: 7.1vh;
-    background-color: blue;
+    background-color: #1F2937;
 
 }
 
@@ -76,14 +81,15 @@
     width: 50%;
     justify-content: start;
     align-items: center;
-    background-color: red;
+    background-color: #1F2937;
 }
 
 .section2 {
-    background-color: blue;
     height: 28vh;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
 }
 
 .title2 {
@@ -95,17 +101,13 @@
     justify-content: center;
 }
 
-.s2Padding {
-    padding-top: 5vh;
-}
-
 .infoBox * {
     display: flex;
     justify-content: center;
 }
 
 .section3 {
-    background-color: cyan;
+    background-color: #E5E7EB;
     height: 22vh;
     padding-top: 0;
     margin-top: 0;
@@ -114,8 +116,10 @@
 }
 
 .quoteContainer {
-    padding-top: 5vh;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .quoteText {
@@ -127,24 +131,28 @@
 }
 
 .section4 {
-    background-color: green;
+    background-color: #FFFFFF;
     height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+#signup2 {
+    background-color: #3B82F6;
+}
+
 .callToActionCont {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: #3B82F6;
     border: 5px solid black;
     padding: 10px;
 }
 
 .footer {
-    background-color: pink;
+    background-color: #1F2937;
     height: 5vh;
     display: flex;
     align-items: center;
@@ -182,7 +190,7 @@
                         This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.
                     </div>
                     <div class="signupButton1">
-                        <button>Sign up</button>
+                        <button id="signup1">Sign up</button>
                     </div>
                 </div>
             </div>
@@ -249,7 +257,7 @@
                     <div class="ctaLine2">Sign up for our product by clicking that button right over there!</div>
                 </div>
                 <div class="callToActionButton">
-                    <button>Sign up</button>
+                    <button id="signup2">Sign up</button>
                 </div>
             </div>
         </div>
