@@ -10,35 +10,146 @@
 <style>
 
 .header {
-    background-color: red;
+    background-color: #1F2937;
     display: flex;
+    height: 5vh;
 }
 
-.headerLinks {
+.header * {
     display: flex;
     list-style: none;
 }
 
+.headerLogo {
+    width: 30%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.headerLinks {
+    width: 70%;
+    justify-content: end;
+}
+
+.links {
+    justify-content: end;
+    padding-right: 25%;
+    width: 100%;
+}
+
+.links li {
+    padding-left: 5%;
+}
+
+.section1 div {
+    display: flex;
+}
+
 .section1 {
-    background-color: yellow;
+    background-color: #1F2937;
+    display: flex;
+    height: 20vh;
+}
+
+.section1 * {
+    display: flex;
+    list-style: none;
+}
+
+.leftCont1 {
+    width: 50%;
+}
+
+.group {
+    width: 100%;
+    padding-left: 25vw;
+    justify-content: middle;
+    flex-direction: column;
+    padding-top: 7.1vh;
+    background-color: blue;
+
+}
+
+.rightCont1 {
+    width: 50%;
+    justify-content: start;
+    align-items: center;
+    background-color: red;
 }
 
 .section2 {
     background-color: blue;
+    height: 28vh;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.title2 {
+    text-align: center;
+}
+
+.informationContainer2 {
+    display: flex;
+    justify-content: center;
+}
+
+.s2Padding {
+    padding-top: 5vh;
+}
+
+.infoBox * {
+    display: flex;
+    justify-content: center;
 }
 
 .section3 {
     background-color: cyan;
+    height: 22vh;
+    padding-top: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.quoteContainer {
+    padding-top: 5vh;
+    width: 50%;
+}
+
+.quoteText {
+    text-align: center;
+}
+
+.quoteAuthor {
+    text-align: right;
 }
 
 .section4 {
     background-color: green;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.callToActionCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border: 5px solid black;
+    padding: 10px;
 }
 
 .footer {
     background-color: pink;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 
 
 
@@ -49,7 +160,6 @@
     <div class="maincontainer">
 
         <div class="header">
-            <header id="head">
                 <div class="headerLogo">
                     Header Logo
                 </div>
@@ -60,19 +170,20 @@
                         <li>header link three</li>
                     </ul>
                 </div>
-            </header>
         </div>
 
         <div class="section1">
             <div class="leftCont1">
-                <div class="titleText1">
-                    This website is awesome
-                </div>
-                <div class="subText1">
-                    This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.
-                </div>
-                <div class="signupButton1">
-                    <button>Sign up</button>
+                <div class="group">
+                    <div class="titleText1">
+                        This website is awesome
+                    </div>
+                    <div class="subText1">
+                        This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.
+                    </div>
+                    <div class="signupButton1">
+                        <button>Sign up</button>
+                    </div>
                 </div>
             </div>
             <div class="rightCont1">
@@ -83,40 +194,42 @@
         </div>
 
         <div class="section2">
-            <div class="title2">
+            <div class="s2Padding">
+               <div class="title2">
                 Some random information.
-            </div>
-            <div class="informationContainer2">
-                <div class="infoBox">
-                    <div class="infoImage">
-                        image here
-                    </div>
-                    <div class="infoText">
-                        this is some subtext under an illustration or image
-                    </div>
                 </div>
-                <div class="infoBox">
-                    <div class="infoImage">
-                        image here
+                <div class="informationContainer2">
+                    <div class="infoBox">
+                        <div class="infoImage">
+                            image here
+                        </div>
+                        <div class="infoText">
+                            this is some subtext under an illustration or image
+                        </div>
                     </div>
-                    <div class="infoText">
-                        this is some subtext under an illustration or image
+                    <div class="infoBox">
+                        <div class="infoImage">
+                            image here
+                        </div>
+                        <div class="infoText">
+                            this is some subtext under an illustration or image
+                        </div>
                     </div>
-                </div>
-                <div class="infoBox">
-                    <div class="infoImage">
-                        image here
+                    <div class="infoBox">
+                        <div class="infoImage">
+                            image here
+                        </div>
+                        <div class="infoText">
+                            this is some subtext under an illustration or image
+                        </div>
                     </div>
-                    <div class="infoText">
-                        this is some subtext under an illustration or image
-                    </div>
-                </div>
-                <div class="infoBox">
-                    <div class="infoImage">
-                        image here
-                    </div>
-                    <div class="infoText">
-                        this is some subtext under an illustration or image
+                    <div class="infoBox">
+                        <div class="infoImage">
+                            image here
+                        </div>
+                        <div class="infoText">
+                            this is some subtext under an illustration or image
+                        </div>
                     </div>
                 </div>
             </div>
@@ -124,20 +237,20 @@
 
         <div class="section3">
             <div class="quoteContainer">
-                <p class="quoteText">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
-                <p class="quoteAuthor">-Thor, God of Thunder</p>
+                <div class="quoteText">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</div>
+                <div class="quoteAuthor">-Thor, God of Thunder</div>
             </div>
         </div>
 
         <div class="section4">
             <div class="callToActionCont">
                 <div class="callToActionText">
-                    <p class="ctaLine1">Call to action! It's time!</p>
-                    <p class="ctaLine2">Sign up for our product by clicking that button right over there!</p>
+                    <div class="ctaLine1">Call to action! It's time!</div>
+                    <div class="ctaLine2">Sign up for our product by clicking that button right over there!</div>
                 </div>
-            </div>
-            <div class="callToActionButton">
-                <button>Sign up</button>
+                <div class="callToActionButton">
+                    <button>Sign up</button>
+                </div>
             </div>
         </div>
 
