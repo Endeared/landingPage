@@ -10,7 +10,9 @@
 <style>
 
 body {
-    font-family: 'Calibri'
+    font-family: 'Calibri';
+    margin: 0;
+    overflow: hidden;
 }
 
 .header {
@@ -19,22 +21,111 @@ body {
     height: 5vh;
 }
 
+.title2 {
+    opacity: 0%;
+    animation-fill-mode: forwards;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-delay: 8s;
+}
+    @keyframes opacity {
+        0%{opacity:0;}
+        100%{opacity:1;}
+    }
+
+
+#html {
+    opacity: 0%;
+    animation-fill-mode: forwards;
+    animation: opacity 4s forwards, slideinLang 2s forwards;
+    animation-delay: 10s;
+}
+    @keyframes opacity {
+        0%{opacity:0;}
+        100%{opacity:1;}
+    }
+    @keyframes slideinLang {
+    from {transform:translateX(+1000px) rotate(0deg);}
+    to {transform:translateX(0%) rotate(360deg);}
+}
+
+#css3 {
+    opacity: 0%;
+    animation-fill-mode: forwards;
+    animation: opacity 4s forwards, slideinLang 2s forwards;
+    animation-delay: 11s;
+}
+    @keyframes opacity {
+        0%{opacity:0;}
+        100%{opacity:1;}
+    }
+    @keyframes slideinLang {
+    from {transform:translateX(+1000px) rotate(0deg);}
+    to {transform:translateX(0%) rotate(360deg);}
+}
+
+#js {
+    opacity: 0%;
+    animation-fill-mode: forwards;
+    animation: opacity 4s forwards, slideinLang 2s forwards;
+    animation-delay: 12s;
+}
+    @keyframes opacity {
+        0%{opacity:0;}
+        100%{opacity:1;}
+    }
+    @keyframes slideinLang {
+    from {transform:translateX(+1000px) rotate(0deg);}
+    to {transform:translateX(0%) rotate(360deg);}
+}
+
+#python {
+    opacity: 0%;
+    animation-fill-mode: forwards;
+    animation: opacity 4s forwards, slideinLang 2s forwards;
+    animation-delay: 13s;
+}
+    @keyframes opacity {
+        0%{opacity:0;}
+        100%{opacity:1;}
+    }
+    @keyframes slideinLang {
+    from {transform:translateX(+1000px) rotate(0deg);}
+    to {transform:translateX(0%) rotate(360deg);}
+}
+
+#foot {
+    color:white;
+    font-style: italic;
+    opacity: 0%;
+    animation-fill-mode: forwards;
+    animation: opacity 3s forwards;
+    animation-delay: 0s;
+}
+    @keyframes opacity {
+        0%{opacity:0;}
+        100%{opacity:1;}
+    }
+
+
 .header * {
     display: flex;
     list-style: none;
 }
 
 .headerLogo {
-    width: 30%;
+    width: 100%;
     height: auto;
     align-items: center;
     justify-content: center;
     padding: 0;
+    margin-top: 50px;
 }
 
 .headerLinks {
-    width: 70%;
+    width: 50%;
     justify-content: end;
+    margin-left: 200px;
 }
 
 .links {
@@ -67,17 +158,27 @@ body {
 
 #signup1 {
     background-color: #3B82F6;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px #3882F6;
+    transition: 0.3s;
 }
 
 .leftCont1 {
-    width: 50%;
+    width: 100%;
 }
+
 
 .group {
     width: 100%;
-    padding-left: 18vw;
-    padding-right: 2vw;
     justify-content: middle;
+    align-items: center;
     flex-direction: column;
     background-color: #1F2937;
 
@@ -125,10 +226,18 @@ body {
     margin-top: 0;
     display: flex;
     justify-content: center;
+    opacity: 0%;
+    animation-fill-mode: forwards;
+    animation: opacity 4s forwards;
+    animation-delay: 17s;
 }
+    @keyframes opacity {
+        0%{opacity:0;}
+        100%{opacity:1;}
+    }
 
 .quoteContainer {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -136,10 +245,16 @@ body {
 
 .quoteText {
     text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
 }
 
 .quoteAuthor {
     text-align: right;
+    font-weight: 900;
+    color: #1F2937;
 }
 
 .section4 {
@@ -148,6 +263,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0%;
+    animation-fill-mode: forwards;
+    animation: opacity 3s forwards, slidein3 3s forwards;
+    animation-delay: 25s;
+}
+    @keyframes opacity {
+        0%{opacity:0;}
+        100%{opacity:1;}
+    }
+    @keyframes slidein {
+    from {transform:translateX(-1000px);}
+    to {transform:translateX(0%);}
 }
 
 #signup2 {
@@ -159,8 +286,12 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #3B82F6;
-    border: 5px solid black;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-shadow: 0 0 5px 1px #3882F6;
+    color: white;
 }
 
 .footer {
@@ -172,8 +303,9 @@ body {
 }
 
 .headerLogo {
-    font-size: 24px;
-    font-weight: 900;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
     color: #F9FAF8;
     font-family: 'Calibri'
 }
@@ -184,10 +316,79 @@ body {
     color: #E5E7EB;
 }
 
+#profilePic {
+    overflow: hidden;
+    height: 50px;
+    margin-top: 0px;
+    margin-right: 10px;
+    opacity: 0%;
+    width: auto;
+    border: 2px solid #3882F6;
+    box-shadow: 0 0 5px 1px #3882F6;
+    border-radius: 100%;
+    animation-fill-mode: forwards;
+    animation: opacity 4s forwards, slidein 3s forwards;
+    animation-delay: 1s;
+}
+    @keyframes opacity {
+        0%{opacity:0;}
+        100%{opacity:1;}
+    }
+    @keyframes slidein {
+    from {transform:translateX(-1000px) rotate(0deg);}
+    to {transform:translateX(0%) rotate(360deg);}
+}
+
+
+#reach {
+    opacity: 0%;
+    animation-fill-mode: forwards;
+    animation: opacity 4s forwards, slidein2 3s forwards;
+    animation-delay: 0s;
+}
+    @keyframes opacity {
+        0%{opacity:0;}
+        100%{opacity:1;}
+    }
+    @keyframes slidein2 {
+    from {transform:translateX(+1000px);}
+    to {transform:translateX(0%);}
+}
+
+.titleText1 {
+    opacity: 0%;
+    animation-fill-mode: forwards;
+    animation: opacity 2s forwards;
+    animation-delay: 2s;
+}
+    @keyframes opacity {
+        0%{opacity:0;}
+        100%{opacity:1;}
+}
+
+.subText1, .signupButton1 {
+    opacity: 0%;
+    animation-fill-mode: forwards;
+    animation: opacity 2s forwards;
+    animation-delay: 5s;
+}
+    @keyframes opacity {
+        0%{opacity:0;}
+        100%{opacity:1;}
+}
+
+.headerLogo {
+    margin-top: 40px;
+}
+
 .titleText1 {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
 }
 
 .imgCont {
@@ -206,7 +407,6 @@ body {
     box-shadow: 0 0 5px 1px #3882F6;
     margin-left: 2vw;
     margin-right: 2vw;
-    padding: 2vw;
     margin-top: 0.5vw;
     border-radius: 12px;
 }
@@ -217,6 +417,64 @@ body {
     margin-right: 1.5vw;
     text-align: center;
     margin-bottom: 0.5vw;
+    font-weight: 900;
+    color:grey;
+}
+
+.infoImage * {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.infoImageSp * {
+    border: 2px solid #3882F6;
+    box-shadow: 0 0 5px 1px #3882F6;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 0.5vw;
+    border-radius: 12px;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+}
+
+.callToActionText * {
+    text-align: left;
+}
+
+.callToActionButton {
+    margin-left: 100px;
+}
+
+.ctaLine1 {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.ctaLine2 {
+    font-weight: 300;
+}
+
+#signup2 {
+    background-color: #3B82F6;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px #ffffff;
+    transition: 0.3s;
+}
+
+#signup2:hover, #signup1:hover {
+    scale:110%;
+    transition: 0.3s;
+    background-color: #0665ff;
 }
 
 </style>
@@ -227,14 +485,8 @@ body {
 
         <div class="header">
                 <div class="headerLogo">
-                    Header Logo
-                </div>
-                <div class="headerLinks">
-                    <ul class="links">
-                        <li>header link one</li>
-                        <li>header link two</li>
-                        <li>header link three</li>
-                    </ul>
+                    <img src="https://avatars.githubusercontent.com/u/114155576?v=4" id="profilePic">
+                    <p id="reach">Reach me on GitHub @ Endeared</p>
                 </div>
         </div>
 
@@ -242,62 +494,54 @@ body {
             <div class="leftCont1">
                 <div class="group">
                     <div class="titleText1">
-                        This website is awesome
+                        This is my first full landing page.
                     </div>
                     <div class="subText1">
-                        This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.
+                        Below is a button that will redirect you to my GitHub account. Additionally, you can read more below about me & read one of my favorite quotes!
                     </div>
                     <div class="signupButton1">
-                        <button id="signup1">Sign up</button>
+                        <button id="signup1" onclick="window.location.href='https://github.com/Endeared';">My GitHub!</button>
                     </div>
                 </div>
-            </div>
-            <div class="rightCont1">
-                <div class="imgCont">
-                    <div class="placeImage">
-                        this is a placeholder for an image
-                    </div>
-                </div>
-
             </div>
         </div>
 
         <div class="section2">
             <div class="s2Padding">
                <div class="title2">
-                Some random information.
+                I am learning these languages:
                 </div>
                 <div class="informationContainer2">
-                    <div class="infoBox">
+                    <div class="infoBox" id="html">
                         <div class="infoImage">
-                            image here
+                            <img src="https://tiermaker.com/images/chart/chart/programming-languages--32215/htmlpng">
                         </div>
                         <div class="infoText">
-                            this is some subtext under an illustration or image
+                            HTML5
                         </div>
                     </div>
-                    <div class="infoBox">
+                    <div class="infoBox" id="css3">
                         <div class="infoImage">
-                            image here
+                            <img src="https://tiermaker.com/images/chart/chart/programming-languages--32215/csspng">
                         </div>
                         <div class="infoText">
-                            this is some subtext under an illustration or image
+                            CSS3
                         </div>
                     </div>
-                    <div class="infoBox">
-                        <div class="infoImage">
-                            image here
+                    <div class="infoBox" id="js">
+                        <div class="infoImageSp">
+                            <img src="https://tiermaker.com/images/chart/chart/programming-languages--32215/javascriptpng">
                         </div>
                         <div class="infoText">
-                            this is some subtext under an illustration or image
+                            JavaScript
                         </div>
                     </div>
-                    <div class="infoBox">
+                    <div class="infoBox" id="python">
                         <div class="infoImage">
-                            image here
+                            <img src="https://tiermaker.com/images/chart/chart/programming-languages--32215/pythonpng">
                         </div>
                         <div class="infoText">
-                            this is some subtext under an illustration or image
+                            Python
                         </div>
                     </div>
                 </div>
@@ -306,25 +550,25 @@ body {
 
         <div class="section3">
             <div class="quoteContainer">
-                <div class="quoteText">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</div>
-                <div class="quoteAuthor">-Thor, God of Thunder</div>
+                <div class="quoteText">I've missed more than 9,000 shots in my career. I've lost almost 300 games. Twenty-six times I've been trusted to take the game-winning shot and missed. I've failed over and over and over again in my life. And that is why I succeed.</div>
+                <div class="quoteAuthor">- Michael Jordan</div>
             </div>
         </div>
 
         <div class="section4">
             <div class="callToActionCont">
                 <div class="callToActionText">
-                    <div class="ctaLine1">Call to action! It's time!</div>
-                    <div class="ctaLine2">Sign up for our product by clicking that button right over there!</div>
+                    <div class="ctaLine1">Like what you see? Want to learn?</div>
+                    <div class="ctaLine2">Sign up for The Odin Project's Foundations Course!</div>
                 </div>
                 <div class="callToActionButton">
-                    <button id="signup2">Sign up</button>
+                    <button id="signup2" onclick="window.location.href='https://www.theodinproject.com/';">Sign up!</button>
                 </div>
             </div>
         </div>
 
         <div class="footer">
-            <footer id="foot">Copyright @ The Odin Project 2022</footer>
+            <footer id="foot">Page created by Ross Hamey (@Endeared). Instruction courtesy of The Odin Project, 2022.</footer>
         </div>
 
     </div>
